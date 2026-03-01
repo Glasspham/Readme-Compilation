@@ -26,15 +26,27 @@ Trước tiên bạn phải chuẩn bị một [USB cứu hộ](./Setup-Window-O
 
 **B3:** Làm ra file .xml _(nếu muốn windows được cài nhẹ, còn không khỏi tạo cũng được)_
 
-- Cách 1: lên web này tạo [Link](https://schneegans.de/windows/unattend-generator/)
+- Cách 1: lên web này tạo [Link](https://schneegans.de/windows/unattend-generator/).
 
-- Cách 2: tải file .xml có sẵn trên github [Link](https://github.com/memstechtips/UnattendedWinstall/blob/main/autounattend.xml#L10)
+- Cách 2: tải file `.xml` có sẵn trên github [Link](https://github.com/memstechtips/UnattendedWinstall/blob/main/autounattend.xml#L10).
 
-**B4:** Cắm usb cứu hộ sao đó restart máy, trong lúc đang restart bấm các nút hàng F, để chọn môi trường trong usb cứu hộ
+**B4:** Cắm usb cứu hộ sao đó restart máy, trong lúc đang restart bấm các nút hàng từ `F1 - F12` (tùy thuộc vào hãng laptop), để chọn môi trường trong usb cứu hộ.
 
-**B5:** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/) hoặc đọc file hướng dẫn [File](./File/Hướng%20dẫn%20cài%20đặt%20Windows%20với%20WinNTSetup%20chuẩn%20UEFI.pdf)
+**B5:** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/) hoặc đọc file hướng dẫn [File](./File/Hướng%20dẫn%20cài%20đặt%20Windows%20với%20WinNTSetup%20chuẩn%20UEFI.pdf).
 
-**B6:** Cài lại các phần mềm, sau khi cài lại windows
+> Lưu ý: 
+
+1. Khi trong app `WinNTSetup` khi bạn chọn `file` và `đường dẫn ổ đĩa` đúng theo `video` hoặc file `.pdf đính kèm`, vẫn còn thiếu 1 bước để thêm file `.xml`. Hãy nhìn vào trường `Unattend` và nhấn chọn để thêm file `.xml` của bạn vào!
+
+2. Lúc khi window khởi động và cài đặt thông tin cho hệ thống thì bạn có thể vượt không yêu cầu `password` và đăng nhập `microsoft`. Lúc chọn khu vực nhấn `Shift + F10` hiện ra cửa sổ `cmd`.
+
+    ```cmd
+    oobe\bypassnro
+    ```
+
+3. Trường `Add drivers` trong file `.pdf` ghi là thiếu sẽ nguy hiểm nhưng thực tế không có vẫn không sao hết!
+
+**B6:** Cài lại các phần mềm, sau khi cài lại windows.
 
 Mở powershell với quyền admin
 
@@ -52,9 +64,9 @@ Mở PowerShell với quyền Admin
 Get-AppxPackage -AllUsers *WindowsStore* | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 ```
 
-**B7:** Đi kiếm chỗ cài đặt driver bị thiếu (VD: với máy Lenovo thì cài Lenovo Vantage, vô phần system update)
+**B7:** Đi kiếm chỗ cài đặt driver bị thiếu (VD: với máy Lenovo thì cài Lenovo Vantage, vô phần system update).
 
-**B8:** Cài phần mềm Winhance, để tắt/bật windows update
+**B8:** Cài phần mềm Winhance, để tắt/bật windows update.
 
 **B9:** Active `Windows` và `Microsoft Office`
 
@@ -183,6 +195,8 @@ exit
 
 ### Ẩn các phân vùng vừa tạo khỏi hiện thị ở `This PC`
 
+#### Cách 1:
+
 B1: Mở Command Prompt với quyền admin.
 
 B2: Gõ lệnh sau:
@@ -213,6 +227,16 @@ B6: Gõ lệnh sau:
 
 ```bash
 exit
+```
+
+#### Cách 2(Recommended):
+
+B1: Mở Command Prompt với quyền admin.
+
+B2: Gõ lệnh sau:
+
+```bash
+mountvol I: /d (thay I bằng ký tự ổ đĩa bạn muốn ẩn)
 ```
 
 ### Xóa phân vùng `Healthy (Recovery Partition)`

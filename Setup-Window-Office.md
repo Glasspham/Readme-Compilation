@@ -39,31 +39,31 @@ Các chỗ tải iso (recommend):
 - [Zinyan91](https://docs.google.com/spreadsheets/d/e/2PACX-1vTId_2VGY1MeQdeH6OU6Oja27zMe91mHmYUl6aVWsyKlcFBuLwvr2M-9uaBRWDUqxPAi5xE-pqief4d/pubhtml#gid=1662926245)
 
 
-**B3:** Làm ra file .xml _(nếu muốn windows được cài nhẹ, còn không khỏi tạo cũng được)_
+**B3:** Làm ra file `.xml` _(nếu muốn windows được cài nhẹ, còn không khỏi tạo cũng được)_ tên gọi khác là file `unattended`.
 
 - Cách 1: lên web này tạo [Link](https://schneegans.de/windows/unattend-generator/).
 
-- Cách 2: tải file .xml có sẵn trên github [Link](https://github.com/memstechtips/UnattendedWinstall/blob/main/autounattend.xml#L10)
+- Cách 2: tải file `.xml` có sẵn trên github [Link](https://github.com/memstechtips/UnattendedWinstall/blob/main/autounattend.xml#L10)
 > ❗**Hãy lưu ý trước khi dùng file này để cài win**
 >
-> File unattended của Winhance mức độ debloat sâu nên sẽ xóa hết các phần mềm của mstore cho dù bạn có tải msstore rồi restart máy sẽ auto remove msstore ra khỏi máy.
+> File `unattended` của `Winhance` mức độ `debloat` sâu nên sẽ xóa hết các phần mềm của `Microsoft Store` cho dù bạn có tải `Microsoft Store` rồi restart máy sẽ `auto remove Microsoft Store` ra khỏi máy.
 >
-> **Cách fix:** mở file unattended ở notepad rồi tìm dòng `'Microsoft.WindowsStore'` xóa bỏ hoặc comment `#` ở đằng trước.
+> **Cách fix:** mở file `unattended` ở notepad rồi tìm dòng `'Microsoft.WindowsStore'` xóa bỏ hoặc comment `#` ở đằng trước.
 >
 > Ví dụ: `#   'Microsoft.WindowsStore'`
 >
 > Tương tự cho mấy phần mềm khác.
 
-**B4:** Cắm usb cứu hộ sao đó restart máy, trong lúc đang restart bấm các nút hàng F, để chọn môi trường trong usb cứu hộ
+**B4:** Cắm usb cứu hộ sao đó restart máy, trong lúc đang restart bấm các nút hàng `F1 - F12`, để chọn môi trường trong usb cứu hộ
 > **Cách nhanh và lười**: Khi ở desktop máy thì tạo shortcut và nhập `shutdown /r /fw /t 0` next next rồi chạy hoặc mở cmd nhập lệnh chạy rồi máy sẽ tự vào bios.
 
-**B5: (optional)** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/)
-> Đủ ổn để nghe theo để cài win nhưng hãy xem README này để dễ hơn. (I hate dic dok btw)
+**B5: (Optional)** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/) hoặc coi [file](./File/Hướng%20dẫn%20cài%20đặt%20Windows%20với%20WinNTSetup%20chuẩn%20UEFI.pdf)
+> Đủ ổn để nghe theo để cài win nhưng hãy xem README này để dễ hơn.
 
-**B6: (optional)** Sau khi cài lại win thì hãy chạy talon để được performance tốt nhất
-> 🐧 Mặc dù file unattended đã đủ nhưng talon sẽ cho lại result tốt nhất, tất nhiêu sẽ là optional thôi vì unattended đã đủ cho ngườ dùng cơ bản.
+**B6: (Optional)** Sau khi cài lại win thì hãy chạy `talon` để được performance tốt nhất
+> 🐧 Mặc dù file `unattended` đã đủ nhưng `talon` sẽ cho lại result tốt nhất, tất nhiên sẽ là `Optional` thôi vì `unattended` đã đủ cho ngườ dùng cơ bản.
 
-Mở PowerShell với quyền admin
+Mở `PowerShell` với quyền admin
 
 **Talon:** Bản full 
 
@@ -85,7 +85,7 @@ Mở powershell với quyền admin
 irm christitus.com/win | iex
 ```
 
-Tải Microsoft Store (optional): [Link](https://github.com/stdin82/htfx/releases/tag/v0.0.24)
+Tải Microsoft Store (Optional): [Link](https://github.com/stdin82/htfx/releases/tag/v0.0.24)
 > Chạy `Add-Store.cmd` là được.
 
 _Lưu ý:_ Do 1 số phần mềm cần cài nằm trên Microsoft Store, mà gần đây nó hay bị lỗi.

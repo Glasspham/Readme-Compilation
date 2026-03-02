@@ -26,9 +26,9 @@ __Lưu ý:__ Nếu bạn chưa phân vùng ổ cứng hay ổ cứng mới mua t
 
 Trước tiên bạn phải chuẩn bị một [USB cứu hộ](./Setup-Window-Office.md#chuẩn-bị-usb-cứu-hộ) trước khi cài vì các hướng dẫn sau đây đều liên quan đến đó.
 
-**B1:** Chia ổ đĩa (ít nhất 2 ổ C và D)
+**B1:** Chia ổ đĩa _(ít nhất 2 ổ C và D nếu bạn không có chỗ chứa file `.iso` như trong usb cứu hộ hoặc trong usb khác)_
 
-**B2:** Lên [Microsoft](https://www.microsoft.com/en-us/software-download/windows11) để tải file windows 11 .iso (lưu ý để vào ổ D, không được phép để vào ổ C)
+**B2:** Lên [Microsoft](https://www.microsoft.com/en-us/software-download/windows11) để tải file windows 11 `.iso` _(lưu ý để vào ổ D nếu không có như trên ghi)_
 
 Các chỗ tải iso (recommend):
 - ⭐ [Massgrave](https://massgrave.dev/genuine-installation-media)
@@ -41,7 +41,7 @@ Các chỗ tải iso (recommend):
 
 **B3:** Làm ra file .xml _(nếu muốn windows được cài nhẹ, còn không khỏi tạo cũng được)_
 
-- Cách 1: lên web này tạo [Link](https://schneegans.de/windows/unattend-generator/)
+- Cách 1: lên web này tạo [Link](https://schneegans.de/windows/unattend-generator/).
 
 - Cách 2: tải file .xml có sẵn trên github [Link](https://github.com/memstechtips/UnattendedWinstall/blob/main/autounattend.xml#L10)
 > ❗**Hãy lưu ý trước khi dùng file này để cài win**
@@ -173,15 +173,15 @@ Nếu không hiện thời gian còn lại là crack thành công vĩnh viễn.
 
 Ban đầu ổ cứng mới chưa có phân vùng nên ta cần chia phân vùng ổ đĩa trước. Bạn cần chuẩn bị một box chứa hoặc cấm trực tiếp vào máy để làm!
 
-B1: Mở command prompt với quyền admin
+**B1:** Mở command prompt với quyền admin
 
-B2: Gõ lệnh sau:
+**B2:** Gõ lệnh sau:
 
 ```bash
 diskpart
 ```
 
-B3: Gõ lệnh sau:
+**B3:** Gõ lệnh sau:
 
 ```bash
 list disk
@@ -189,13 +189,13 @@ list disk
 
 Hiện ra các phân vùng ổ đĩa của bạn, hãy chọn đúng ổ đĩa cần chia (thường là ổ đĩa 1 là ổ cứng mới gắn thêm)
 
-B4: Gõ lệnh sau:
+**B4:** Gõ lệnh sau:
 
 ```bash
 select disk 1
 ```
 
-B5: Gõ lệnh sau:
+**B5:** Gõ lệnh sau:
 
 > Bạn có thể thay đổi dung lượng theo ý thích (300 là 300MB). Và chỉnh label theo ý thích.
 
@@ -216,14 +216,14 @@ assign letter="R"
 set id="de94bba4-06d1-4d40-a16a-bfd50179d6ac"
 gpt attributes=0x8000000000000001
 ```
-B6: Gõ lệnh sau:
+**B6:** Gõ lệnh sau:
 
 Kiểm tra lại phân vùng vừa tạo
 
 ```bash
 list partition
 ```
-B7: Gõ lệnh sau:
+**B7:** Gõ lệnh sau:
 
 ```bash
 exit
@@ -231,79 +231,91 @@ exit
 
 ### Ẩn các phân vùng vừa tạo khỏi hiện thị ở `This PC`
 
-B1: Mở Command Prompt với quyền admin.
+#### Cách 1:
 
-B2: Gõ lệnh sau:
+**B1:** Mở Command Prompt với quyền admin.
+
+**B2:** Gõ lệnh sau:
 
 ```bash
 diskpart
 ```
 
-B3: Gõ lệnh sau:
+**B3:** Gõ lệnh sau:
 
 ```bash
 list volume
 ```
 
-B4: Gõ lệnh sau:
+**B4:** Gõ lệnh sau:
 
 ```bash
 select volume X (thay X bằng số volume bạn muốn ẩn).
 ```
 
-B5: Gõ lệnh sau:
+**B5:** Gõ lệnh sau:
 
 ```bash
 remove letter=E (thay E bằng ký tự ổ đĩa bạn muốn ẩn). 
 ```
 
-B6: Gõ lệnh sau:
+**B6:** Gõ lệnh sau:
 
 ```bash
 exit
 ```
 
+#### Cách 2 (Recommended):
+
+**B1:** Mở Command Prompt với quyền admin.
+
+**B2:** Gõ lệnh sau:
+
+```bash
+mountvol I: /d (thay I bằng ký tự ổ đĩa bạn muốn ẩn)
+```
+
 ### Xóa phân vùng `Healthy (Recovery Partition)`
 
-B1: Mở Command Prompt với quyền admin.
+**B1:** Mở Command Prompt với quyền admin.
 
-B2: Gõ lệnh sau:
+**B2:** Gõ lệnh sau:
 
 ```bash
 diskpart
 ```
 
-B3: Gõ lệnh sau:
+**B3:** Gõ lệnh sau:
 
 ```bash
 list disk
 ```
 
-B4: Gõ lệnh sau:
+**B4:** Gõ lệnh sau:
 
 ```bash
 select disk X (thay X bằng số ổ đĩa bạn muốn xóa).
 ```
 
-B5: Gõ lệnh sau:
+**B5:** Gõ lệnh sau:
 
 ```bash
 list partition
 ```
 
-B6: Gõ lệnh sau:
+**B6:** Gõ lệnh sau:
 
 ```bash
 select partition X (thay X bằng số volume bạn muốn xóa).
 ```
 
-B7: Gõ lệnh sau:
+**B7:** Gõ lệnh sau:
 
 ```bash
 delete partition override
 ```
 
-B8: Gõ lệnh sau:
+**B8:** Gõ lệnh sau:
 
 ```bash
 exit

@@ -21,23 +21,27 @@ _Các bước thực hiện:_
 
 Còn [google photo](https://github.com/VVispy/revanced-builder/releases/download/55/google-photos-revanced-v7.63.0.869312946-arm64-v8a.apk) không giới hạn thì cài file apk này về và chạy apk là xong.
 
-### Lựu chọn thêm cho morphe manager:
-Reddit: Thêm patch vào morphe manager
-- `https://raw.githubusercontent.com/wchill/patcheddit/refs/heads/main/patches-bundle.json`
+### Lựa chọn thêm cho Morphe Manager:
 
-RVX Morphed Patches: 
-- `https://raw.githubusercontent.com/wchill/rvx-morphed/refs/heads/main/patches-bundle.json`
+_Làm sao để add Patches:_
 
-RVX Patches Anddea:
-- `https://raw.githubusercontent.com/Jman-Github/ReVanced-Patch-Bundles/bundles/patch-bundles/anddea-patch-bundles/anddea-latest-patches-bundle.json`
+1. Mở Morphe Manager
+2. Chọn icon folder (ở bên trái phía dưới)
+3. Nhấn dấu **+** bên cạnh **"Patch Sources"**
+4. Ở trang **"Add Patch Source"**, chắc chắn đã chọn **Remote**
+5. Dán Source URL (từ phần Community Patches bên dưới) vào ô **"Source URL"**
+6. Nhấn **Add**
 
-Piko Twitter/X:
-- `https://raw.githubusercontent.com/Jman-Github/ReVanced-Patch-Bundles/bundles/patch-bundles/piko-patch-bundles/piko-latest-patches-bundle.json`
+_Community Patches_
 
-
-
-
-
+- **Hoodles Morphe Patches** — `https://github.com/hoo-dles/morphe-patches`
+- **Patcheddit** (Wchill) — `https://github.com/wchill/patcheddit`
+- **Piko X / Twitter** (Crimera) — `https://www.reddit.com/r/MorpheApp/s/zTaYINRZn4`
+- **RVX Patches** (Anddea) — `https://github.com/anddea/revanced-patches/blob/dev/patches-bundle.json`
+- **Morphe Patches** (Andronedev) — `https://github.com/andronedev/morphe-patches`
+- **De-ReVanced** (RookieEnough) — `https://github.com/RookieEnough/De-ReVanced`
+- **Adobo** (JKennethCarino) — `https://github.com/jkennethcarino/adobo`
+- **RVX Morphed** (Wchill) — `https://github.com/wchill/rvx-morphed`
 
 ## Cách 2: Dùng Obtainium cài về lụm luôn và tự động update
 
@@ -53,7 +57,7 @@ _Các bước thực hiện:_
 
 1. Cài đặt Obtainium
 2. Tải file JSON configuration:
-   - [Config One](https://gitlab.com/-/snippets/4883030/raw/main/obtainium-config.json?inline=false) / [Config Two (Additional)](https://gitlab.com/-/snippets/4926053/raw/main/extra-obtainium-config.json?inline=false) 
+   - [Config One](https://gitlab.com/-/snippets/4883030/raw/main/obtainium-config.json?inline=false) / [Config Two (Additional)](https://gitlab.com/-/snippets/4926053/raw/main/extra-obtainium-config.json?inline=false)
 3. Mở Obtainium, vào **Import/Export** (tab ở dưới), chọn **Obtainium Import**, và chọn file JSON đã tải
 4. Quay lại tab **Apps** - các ứng dụng sẽ xuất hiện
 5. Obtainium sẽ tự động kiểm tra và thông báo khi có phiên bản mới của các ứng dụng.

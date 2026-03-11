@@ -30,6 +30,13 @@ Chào mừng bạn đến với kho tàng kiến thức và hướng dẫn cài 
 
 ---
 
+## 📄 Tổng hợp tài liệu (Documents)
+
+- 📚🇪🇳 **[Tổng hợp sách Third Edition Solutions](./Third-Edition-Solutions.md)**
+  > Tổng hợp sách bài học và bài tập của sách Third Edition Solutions của `Oxford University Press` là bộ giáo trình Tiếng Anh nổi tiếng dành cho học sinh và sinh viên (từ Elementary đến Advanced).
+
+---
+
 <p align="center">
-  <sub>Được tổng hợp và chia sẻ với ❤️ của <a href="https://github.com/Glasspham">Glasspham</a></sub>
+  <sub>Được tổng hợp và chia sẻ bởi <b><a href="https://github.com/Glasspham">Glasspham</a></b> & <b><a href="https://github.com/harrytien107">harrytien107</a></b></sub>
 </p>

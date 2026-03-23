@@ -59,6 +59,12 @@ Các chỗ tải iso (recommend):
 
 **B5: (Optional)** Coi theo video cài windows của "Neyako Phạm" [Link](https://vt.tiktok.com/ZS9JhErjobKJd-0MDv3/) hoặc coi [file](./File/Hướng%20dẫn%20cài%20đặt%20Windows%20với%20WinNTSetup%20chuẩn%20UEFI.pdf)
 > Đủ ổn để nghe theo để cài win nhưng hãy xem README này để dễ hơn.
+>
+> Lúc khi window khởi động và cài đặt thông tin cho hệ thống thì bạn có thể vượt không yêu cầu password và đăng nhập microsoft. Lúc chọn khu vực nhấn Shift + F10 hiện ra cửa sổ cmd.
+> 
+> ```cmd
+> oobe\bypassnro
+> ```
 
 **B6: (Optional)** Sau khi cài lại win thì hãy chạy `talon` để được performance tốt nhất
 > 🐧 Mặc dù file `unattended` đã đủ nhưng `talon` sẽ cho lại result tốt nhất, tất nhiên sẽ là `Optional` thôi vì `unattended` đã đủ cho ngườ dùng cơ bản.

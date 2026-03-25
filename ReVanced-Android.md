@@ -19,7 +19,7 @@ _Các bước thực hiện:_
 6. Bấm **Install** → XONG
 
 
-Còn [google photo](https://github.com/VVispy/revanced-builder/releases/download/55/google-photos-revanced-v7.63.0.869312946-arm64-v8a.apk) không giới hạn thì cài file apk này về và chạy apk là xong.
+Còn [google photo](https://github.com/VVispy/revanced-builder/releases) không giới hạn thì cài file apk này về và chạy apk là xong.
 
 ### Lựa chọn thêm cho Morphe Manager:
 

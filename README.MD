@@ -28,8 +28,6 @@ Chào mừng bạn đến với kho tàng kiến thức và hướng dẫn cài 
 - 📺 **[Revanced Android](./ReVanced-Android.md)**
   > Cách cài đặt YouTube ReVanced (xem Youtube không quảng cáo, chạy nền) và Google Photos không giới hạn dung lượng trên Android.
 
----
-
 ## 📄 Tổng hợp tài liệu (Documents)
 
 - 📚🇪🇳 **[Tổng hợp sách Third Edition Solutions](./Third-Edition-Solutions.md)**

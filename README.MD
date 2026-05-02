@@ -23,10 +23,13 @@ Chào mừng bạn đến với kho tàng kiến thức và hướng dẫn cài 
 - 💻 **[Setup Environment C++](./Setup-Enviroment-Cpp.md)**
   > Hướng dẫn chi tiết cài đặt Msys2, GCC và thiết lập môi trường lập trình C/C++ chuẩn chỉnh trên Windows.
 
+- 💾 **[Config Chocolatey Winget Scoop](./Config-Chocolatey-Winget-Scoop.md)**
+  > Hướng dẫn cài đặt và cấu hình Chocolatey, Winget và Scoop để quản lý gói phần mềm trên Windows.
+
 ## 📱 Di động (Mobile & Apps)
 
-- 📺 **[Revanced Android](./ReVanced-Android.md)**
-  > Cách cài đặt YouTube ReVanced (xem Youtube không quảng cáo, chạy nền) và Google Photos không giới hạn dung lượng trên Android.
+- 📺 **[Android](./Android.md)**
+  > Cách cài đặt YouTube Vanced, YouTube Music Vanced (xem Youtube không quảng cáo, chạy nền) và Google Photos không giới hạn dung lượng trên Android.
 
 ## 📄 Tổng hợp tài liệu (Documents)
 

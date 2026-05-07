@@ -15,9 +15,9 @@
 Bạn có thể làm theo video hướng dẫn dưới đây [Link video](https://youtu.be/g2tDjh7v-Ok?si=PSa-RFeuJ0qHI6oA)
 
 #### Các USB Boot mà tôi recommend:
-- ⭐ Ventoy 
-- NHV BOOT (có bản free và paid)
-- Anhdv Boot (có bản free và paid)
+- ⭐ Ventoy [hướng dẫn tạo usb boot](https://www.ventoy.net/en/index.html)
+- NHV BOOT (có bản free và paid) [hướng dẫn tạo usb boot](https://anhdvboot.com/huong-dan/tao-usb-boot-phan-vung-an-uefi-legacy-voi-1-click-anhdv-boot/)
+- Anhdv Boot (có bản free và paid) [hướng dẫn tạo usb boot](https://nhvboot.com/huong-dan-tao-usb-nhv-boot/)
 - WinPE
 
 ## Cài Windows 11

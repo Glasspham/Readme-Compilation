@@ -157,3 +157,16 @@ File `profile.ps1` sẽ được chạy mỗi khi mở `PowerShell`, dùng để
 File `CTTcustom.ps1` sẽ được load theo do trong file `Microsoft.PowerShell_profile.ps1` có lệnh gọi đến file này. Nên chỉ có thể lưu các cấu hình giao diện, theme, font, và api, ...
 
 Nên khi thêm 1 thứ gì mới hãy thử bỏ vào 1 trong 2 file này để kiểm tra xem nó có hoạt động không nhé!
+
+
+## Cấu hình Terminal của [harrytien107](https://github.com/harrytien107/powershell-profile)
+
+Update: 2024-06-26
+Do gần đây ở christitus bị cắt bớt chức năng nên mình đã tự tạo ra 1 bản cấu hình mới.
+Giữ lại các chức năng ngày xưa của ChrisTitusTech và thêm 1 số chức năng mới.
+Các chức năng mới:
+- Thêm chức năng lựa chọn theme.
+- Thêm Tool AVL.
+- Bật/tắt chức năng update profile (mặc định là tắt).
+
+Check tại: [powershell-profile-fork](https://github.com/harrytien107/powershell-profile)

@@ -31,6 +31,16 @@ Chào mừng bạn đến với kho tàng kiến thức và hướng dẫn cài 
 - 📺 **[Android](./Android.md)**
   > Cách cài đặt YouTube Vanced, YouTube Music Vanced (xem Youtube không quảng cáo, chạy nền) và Google Photos không giới hạn dung lượng trên Android.
 
+## 🖥️ Remote & Streaming
+
+- 🖥️ **[Remote & Stream PC](./Remote.md)**
+  > Tổng hợp công cụ remote desktop và hướng dẫn setup stream PC ở mọi nơi bằng Apollo, Artemis/Moonlight, Tailscale và các tùy chọn mạng khác.
+
+## 🌐 Tổng hợp trang web & công cụ (Web & Tool Indexes)
+
+- 🧭 **[Site Tool Indexes](./Site-Tool-Indexes.md)**
+  > Tổng hợp các trang web, cộng đồng và index nội dung hữu ích theo từng nhóm chủ đề.
+
 ## 📄 Tổng hợp tài liệu (Documents)
 
 - 📚🇪🇳 **[Tổng hợp sách Third Edition Solutions](./Third-Edition-Solutions.md)**
